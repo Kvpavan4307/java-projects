@@ -1,0 +1,115 @@
+-- Introduction 
+Multithreading in java is process of executing multiple threads simultaneously
+A thread is a light weight sub-process, the smallest unit of processing
+
+eg. IDM( internet download manager) : downloading movie from torrent(t1) + song file (t2)+ lecture file(t3) + movie(t4) at a same time 
+--combining of multiple thread is become a process
+
+There are so many process working at a same time is known as multiprocessing.
+e.g - (vlc media + idm + ms-office) in OS working all at same time
+
+But In a single process there are some many thing we work at a same time.
+
+In a single process at least one thread is present in it and we can create so many 
+other threads also in that process.
+
+
+Inside a process we have thread and we create so many thread inside a process.
+
+
+creating thread in java
+
+Using Runnable 
+Using Thread
+
+Interface Runnable{
+	run();
+}
+
+class Thread extends Runnable{
+
+}
+
+
+eg:
+ 
+ class MyThread implement{
+  @Override
+  void run(){
+  
+  }
+  
+ }
+ public static void main(String[] args){
+	
+	MyThread t = new MyThread();
+	Thread thread = new Thread(t);
+	thread.start();
+	
+
+}
+ 
+ 
+ or 
+ 
+ class MyThread extends Thread{
+ 	@Override
+ 	run(){
+ 	
+ 	}
+ }
+ 
+  public static void main(String[] args){
+	
+	MyThread t = new MyThread();
+	t.start();
+	
+
+}
+
+// Runnable is  a good way to implement thread
+
+
+// thread life cycle 
+
+New 
+start()
+Runnable 
+				Non Runnable (Blocked)
+Running
+stop()
+Terminated 
+
+
+Thread Operation : 
+Thread class provide method to perform operations with threads.
+This thread class is present in java.lang package. So we don't need to import this package.
+Some important thread methods 
+public string getName()- return the name of thread
+public void setName(String name) - set the name of thread
+public void run() - contain the task of thread
+public void start() - start thread by allocating resources 
+public long getId() - return the id of thread
+setPriority(p), getPriority() - set and get the priority
+sleep(), join(), interrupt(), resume(), stop() etc.....
+ 
+
+
+// Daemon Thread
+Daemon thread in java is a service provider thread that provides services to user thread.
+
+setDaemon(Boolean)
+public Boolean isDaemon()
+
+Garbage Collector is best example of Daemon thread.
+
+
+// Producer Consumer Problem
+
+synchronized,  Inter-thread Communication 
+
+
+
+ 
+
+

@@ -1,0 +1,42 @@
+// Access Modifier (member Type -> variable and method level)
+-> Public member :
+	- global level 
+	- we can access from any where within the class or outside the class
+	- Even we declare the member as public we can't access that member if our class is not public outside package we can't access it.
+	- We check first at class level 
+	- recommended modifier for method is public
+-> Default member:  
+	-package level
+	- Class is public but member of that class is default we can access inside the package 
+	- Outside package we can't access
+
+-> Private Member: 
+	- class level
+	- If we declare member as private we can access it outside the class.
+	- Private is highly recommended for member variable declaration
+	- recommended modifier for variable is private
+
+-> Protected Member:
+ 	-> with in the current package anywhere we can access but outside the package only in child class.
+ 	-> + compulsory we have to use child class reference only to access the private member outside the package.
+ 	-> Protected --> default + child class.
+ 	
+ 	
+ ->conclusion: 
+	 private < default < protected < public
+	 
+
+-- -- Method Signature -- --
+public int m1(int i)
+
+-- method sign for above method : methodName(parameter types) 
+ -- m1(int)
+ 
+eg : public int m2(int i,float f)
+ -- m2(int ,float)
+ 
+ 
+
+
+	
+	

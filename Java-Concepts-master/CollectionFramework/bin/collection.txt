@@ -1,0 +1,25 @@
+// https://www.geeksforgeeks.org/collections-in-java-2/
+
+Collection interface (It extends Iterable interface )
+from collection interface List,Set,Queue,Map these are extends from Collection Interface
+
+// List extends Collection 
+ArrayList , vector , stack , LinkedList these classes  implements List interface
+**stack class extends vector class
+// ArrayList is a-synchronous and vector is synchronous. 
+// ArrayList is faster than vector
+
+
+//Queue extends Collection
+PriorityQueue class implements Queue interface .
+
+//Deque extends Queue
+ArrayDeque class is implements  Deque interface
+
+//Set interface extends Collection interface
+HashSet Class implements Set interface**
+LinkedHashSet class implements Set interface**
+Sorted set interface extends set interface
+Tree set class implements sorted set  
+
+ 
